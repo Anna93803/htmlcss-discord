@@ -17,13 +17,7 @@ body {
 
 :root {
     --bg-white: white;
-}
-header .col {
-    flex-grow: 1;
-}
-
-header .col-large {
-    flex-grow: 2;
+    --bg-footer: #7188d9;
 }
 
 .btn {
@@ -42,6 +36,11 @@ header .col-large {
     color: var(--bg-white);
 }
 
+.btn.btn-lilla {
+    background-color: #8ea1e1;
+    color: var(--bg-white);
+}
+
 .btn-p {
     padding: .75rem 1.125rem;
 }
@@ -50,7 +49,7 @@ header .col-large {
     list-style: none;
 }
 
-.font-w {
+.font-w, h5 {
     font-weight: 700;
     line-height: 1.7;
 }
@@ -60,13 +59,14 @@ h1 {
     color: var(--bg-white);
 }
 
-h2 {
+h2, h3 {
     font-weight: 600;
     font-size: 2.1875rem;
     padding: 1.25rem 0;
 }
 
 /* Header */
+
 header {
     background-color: #3161e0;
 }
@@ -79,6 +79,14 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .col {
+    flex-grow: 1;
+}
+
+header .col-large {
+    flex-grow: 2;
 }
 
 .d-flex.links {
@@ -96,6 +104,7 @@ header nav {
     text-align: right;
 }
 
+/* Header Jumbo */
 .jumbo {
     background-image: url("../img/jumbo.png");
     background-position: center;
@@ -109,12 +118,13 @@ header nav {
 }
 
 .small-container p {
-    color: var(--bg-white);
     padding: 1.875rem 0;
 }
 
+.small-container p,
 .small-container div {
     text-align: center;
+    color: var(--bg-white);
 }
 
 .small-container div button:first-child {
@@ -155,4 +165,65 @@ header nav {
 
 .section .col {
     flex-grow: 1;
+}
+
+.stars h3 {
+    font-size: 1.5625rem;
+}
+
+.stars {
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 1.25rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #23272a;
+    color: var(--bg-footer);
+}
+
+footer .col-large, footer > .col {
+    padding: 3.125rem 0;
+}
+
+footer .col-large h3 {
+    overflow-wrap: break-word;
+    inline-size: 18.75rem;
+    padding-bottom: 1.875rem;
+}
+
+.baseline {
+    align-items: baseline;
+    padding: 1.875rem 0;
+    border-bottom: 1px solid var(--bg-footer);
+}
+
+.col-large select {
+    border: none;
+    background: #23272a;
+    color: var(--bg-white);
+}
+
+.col-large img {
+    width: 20px;
+}
+
+.social {
+    color: var(--bg-white);
+    padding: 1.5625rem 0;
+}
+
+.social i {
+    padding-right: 1.25rem;
+    font-size: 1.125rem;
+}
+
+footer .col .links li a {
+    padding: .5rem 0;
+}
+
+footer div:nth-child(2) {
+    padding: 1.5625rem 0;
 }
