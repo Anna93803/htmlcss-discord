@@ -1,0 +1,277 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+:root {
+    --bg-white: white;
+    --bg-footer: #7188d9;
+}
+
+.btn {
+    border-radius: 1.5625rem;
+    padding: .5rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn.btn-white {
+    background-color: var(--bg-white);
+}
+
+.btn.btn-black {
+    background-color: #23272a;
+    color: var(--bg-white);
+}
+
+.btn.btn-lilla {
+    background-color: #8ea1e1;
+    color: var(--bg-white);
+}
+
+/* Hover */
+.btn-white:hover {
+    background-color: lightgray;
+}
+
+.btn-black:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+.btn-lilla:hover {
+    background-color: #6070a4;
+}
+
+.btn-white:hover,
+.btn-black:hover,
+.btn-lilla:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.links li a:hover {
+    color: #8ea1e1;
+    border-bottom: 1px solid currentColor;
+}
+
+.social i:hover {
+    color: #6070a4;
+}
+
+/* / Hover */
+.btn-p {
+    padding: .75rem 1.125rem;
+}
+
+.links {
+    list-style: none;
+}
+
+.font-w, h5 {
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 3.75rem;
+    color: var(--bg-white);
+}
+
+h2, h3 {
+    font-weight: 600;
+    font-size: 2.1875rem;
+    padding: 1.25rem 0;
+}
+
+/* Header */
+
+header {
+    background-color: #3161e0;
+}
+
+header nav {
+    padding: .9375rem 0;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .col {
+    flex-grow: 1;
+}
+
+header .col-large {
+    flex-grow: 2;
+}
+
+.d-flex.links {
+    justify-content: center;
+}
+
+.links li a {
+    text-decoration: none;
+    color: var(--bg-white);
+    display: inline-block;
+    padding: 0 1.25rem;
+}
+
+.col.col-login {
+    text-align: right;
+}
+
+/* Header Jumbo */
+.jumbo {
+    background-image: url("../img/jumbo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.small-container {
+    max-width: 41.5rem;
+    margin: 0 auto;
+    padding: 7.5rem 0;
+}
+
+.small-container p {
+    padding: 1.875rem 0;
+}
+
+.small-container p,
+.small-container div {
+    text-align: center;
+    color: var(--bg-white);
+}
+
+.small-container div button:first-child {
+    margin-right: .9375rem;
+}
+
+/* Main */
+.section {
+    display: flex;
+    padding: 5.625rem 0;
+}
+
+.section, 
+.col p, 
+.section-block p {
+    line-height: 1.3;
+}
+
+.d-reverse {
+    flex-direction: row-reverse;
+}
+
+
+.section-block {
+    text-align: center;
+    padding: 5.625rem 0;
+}
+
+.section .col > h2,
+.section .col > p {
+    overflow-wrap: break-word;
+    inline-size: 15.8125rem;
+}
+
+.section-block p {
+    inline-size: 50rem;
+    margin: 0 auto;
+}
+
+.section .col {
+    flex-grow: 1;
+}
+
+.stars h3 {
+    font-size: 1.5625rem;
+}
+
+.stars {
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 1.25rem 0;
+}
+
+.wave {
+    background-color: #f6f6f6;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.rotate, .wave-color {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(25deg) brightness(109%) contrast(93%);
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #23272a;
+    color: var(--bg-footer);
+}
+
+footer .col-large, footer > .col {
+    padding: 3.125rem 0;
+}
+
+footer .col-large h3 {
+    overflow-wrap: break-word;
+    inline-size: 18.75rem;
+    padding-bottom: 1.875rem;
+}
+
+.baseline {
+    align-items: baseline;
+    padding: 1.875rem 0;
+    border-bottom: 1px solid var(--bg-footer);
+}
+
+.col-large select {
+    border: none;
+    background: #23272a;
+    color: var(--bg-white);
+    cursor: pointer;
+    text-align: center;
+}
+
+.col-large img {
+    width: 20px;
+}
+
+.social {
+    color: var(--bg-white);
+    padding: 1.5625rem 0;
+    cursor: pointer;
+}
+
+.social i {
+    padding-right: 1.25rem;
+    font-size: 1.125rem;
+}
+
+footer .col .links li a {
+    padding: .5rem 0;
+}
+
+footer div:nth-child(2) {
+    padding: 1.5625rem 0;
+}
