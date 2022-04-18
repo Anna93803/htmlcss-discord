@@ -42,6 +42,30 @@ body {
     color: var(--bg-white);
 }
 
+.btn-p {
+    padding: .75rem 1.125rem;
+}
+
+.links {
+    list-style: none;
+}
+
+.font-w, h5 {
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 3.75rem;
+    color: var(--bg-white);
+}
+
+h2, h3 {
+    font-weight: 600;
+    font-size: 2.1875rem;
+    padding: 1.25rem 0;
+}
+
 /* Hover */
 .btn-white:hover {
     background-color: lightgray;
@@ -70,34 +94,8 @@ body {
 .social i:hover {
     color: #6070a4;
 }
-
 /* / Hover */
-.btn-p {
-    padding: .75rem 1.125rem;
-}
-
-.links {
-    list-style: none;
-}
-
-.font-w, h5 {
-    font-weight: 700;
-    line-height: 1.7;
-}
-
-h1 {
-    font-size: 3.75rem;
-    color: var(--bg-white);
-}
-
-h2, h3 {
-    font-weight: 600;
-    font-size: 2.1875rem;
-    padding: 1.25rem 0;
-}
-
 /* Header */
-
 header {
     background-color: #3161e0;
 }
@@ -178,7 +176,6 @@ header .col-large {
     flex-direction: row-reverse;
 }
 
-
 .section-block {
     text-align: center;
     padding: 5.625rem 0;
@@ -242,7 +239,7 @@ footer .col-large h3 {
 .baseline {
     align-items: baseline;
     padding: 1.875rem 0;
-    border-bottom: 1px solid var(--bg-footer);
+    border-bottom: .0625rem solid var(--bg-footer);
 }
 
 .col-large select {
