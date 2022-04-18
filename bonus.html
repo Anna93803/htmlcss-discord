@@ -9,7 +9,6 @@
         <!-- /font-awesome -->
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/bonus.css">
-        <!-- <link rel="stylesheet" href="./css/sicurezza.css"> -->
         <title>Discord</title>
     </head>
     <body>
@@ -111,34 +110,11 @@
             <div class="container d-flex baseline">
                 <div class="col-large">
                     <h3>Il tuo posto per parlare</h3>
-                    <img id="banner"src="./img/ita.png" alt="bandiera italiana">
-                    <select name="language" id="language" onchange="flagChange()">
+                    <img src="./img/ita.png" alt="bandiera italiana">
+                    <select name="language" id="language">
                         <option value="IT">Italiano</option>
                         <option value="EN">English</option>
                     </select>
-
-                    <script>
-                        const select = document.getElementById("language");
-                        console.log(select);
-                        const a = select.getAttribute('value', 'IT','EN');
-                        console.log(a);
-                        const davai = document.getElementById("banner");
-                        console.log(davai);
-                        // select==='IT'? davai.setAttribute('src','./img/UK.png') : davai.setAttribute('src','./img/ita.png');
-                        
-                        function flagChange() {
-                            if(select==='IT') {
-                                davai.setAttribute('src','./img/ita.png');
-                            } else if(select==='EN') {
-                                davai.setAttribute('src','./img/UK.png');
-                            }
-                        };
-
-                        // select.addEventListener('change', function() {
-                        //     select==='IT'? davai.setAttribute('src','./img/UK.png') : davai.setAttribute('src','./img/ita.png');
-                        // });
-                    </script>
-                    
                     <div class="social">
                         <i class="fa-brands fa-twitter"></i>
                         <i class="fa-brands fa-instagram"></i>
